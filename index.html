@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de LED</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="contenedorPrincipal">
+        <h1 class="mb-4" id="titulo">Control de LED</h1>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="text-center">
+                            <input type="checkbox" id="toggleBtn" />
+                            <div class="bg-fill"></div>
+                            <div class="switch-btn">
+                                <label for="toggleBtn">
+                                    <div class="icons">
+                                        <img src="./img/moon-icon.png" alt="moon" />
+                                        <img src="./img/sun-icon.png" alt="moon" />
+                                    </div>
+                                </label>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>
+
+    <div class="contenedorChart">
+    <canvas id="barChartCanvas" class="chart"></canvas>
+    <img id="led" src="./img/ROJO-OFF.svg">
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>
